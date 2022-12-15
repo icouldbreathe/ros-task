@@ -26,7 +26,7 @@ docker build -t turtlebot3 .
 docker compose up
 ```
 
-5. Open a terminal inside container
+5. Open a terminal inside the container
 
 ```
 docker exec -it ros2-turtlebot3-sim-turtlebot3-1 /bin/bash
