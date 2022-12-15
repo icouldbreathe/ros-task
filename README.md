@@ -46,7 +46,7 @@ colcon build --symlink-install
 source ./install/setup.bash
 ```
 
-8. Build cpp_subpub
+8. Build cpp_pubsub
 
 9. Run the node
 
