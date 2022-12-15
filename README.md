@@ -1,6 +1,6 @@
 # Readme
 
-I used a Docker container to set up the environment for ros2 and turtlebot3 and used another container for the mysql database. The code of the node is in workspace/cpp_subpub/src.
+I used a Docker container to set up the environment for ros2 and turtlebot3 and used another container for the mysql database. The code of the node is in workspace/cpp_pubsub/src.
 
 ## Setup
 
@@ -51,5 +51,5 @@ source ./install/setup.bash
 9. Run the node
 
 ```
-ros2 run cpp_subpub mysqlnode
+ros2 run cpp_pubsub mysqlnode
 ```
