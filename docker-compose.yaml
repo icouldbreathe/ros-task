@@ -1,0 +1,28 @@
+services:
+  turtlebot3:
+    image: turtlebot3
+    volumes:
+      - $PWD/workspace:/home/ubuntu/dev_ws
+    ports:
+      - 6080:80     # for no-vnc client
+    working_dir: /home/ubuntu/dev_ws
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_DB: rosdb
+
+  mysql:            # hostname=mysql
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    expose:
+      - '3306'
+    volumes:
+      - ros-mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: rosdb
+
+volumes:
+  ros-mysql-data:

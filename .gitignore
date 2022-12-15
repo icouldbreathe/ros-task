@@ -1,0 +1,14 @@
+workspace/build/*
+!workspace/build/cpp_pubsub
+workspace/log/**
+workspace/install/**
+workspace/src/my_package/**
+workspace/src/DynamixelSDK
+workspace/src/hls_lfcd_lds_driver
+workspace/src/ros_tutorials
+workspace/src/turtlebot3
+workspace/src/turtlebot3_msgs
+workspace/src/turtlebot3_simulations
+
+.DS_Store
+.vscode
